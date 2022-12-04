@@ -8,21 +8,11 @@ export default function About({ resumeData }) {
         </div>
 
         <div className="nine columns main-col">
-          <h2>About {resumeData.name.slice(0, 7)}</h2>
+          <h2>Short bio</h2>
           <p>{resumeData.aboutme}</p>
-
-          <div className="row">
-            <div className="columns contact-details">
-              <h2>Contact Details</h2>
-              <p className="address">
-                <span>{resumeData.name}</span>
-                <br />
-                <span>{resumeData.address}</span>
-                <br />
-                <span>{resumeData.website}</span>
-              </p>
-            </div>
-          </div>
+          {resumeData.tools.map((item, index) => {
+            return <li key={index}>{item}</li>;
+          })}
         </div>
       </div>
     </section>

@@ -1,11 +1,11 @@
 let resumeData = {
-  imagebaseurl: "https://rbhatia46.github.io/",
+  imagebaseurl: "https://sbonelo01.github.io/portfolio/",
   name: "Sbonelo Mkhize",
-  role: "web developer and an aspiring UX Designer",
-  personalEmail: " sbonelomkhize15@gmail.com",
+  role: "web developer",
+  personalEmail: "sbonelomkhize15@gmail.com",
   // skypeid: "Your skypeid",
   roleDescription:
-    "I like dabbling in various parts of web development - with a focus on frontend development",
+    "I am a creative web developer who is always willing to push the envelope to improve the user experience. I love solving real world problems and working with vibrant teams.",
   socialLinks: [
     {
       name: "linkedin",
@@ -24,9 +24,24 @@ let resumeData = {
     // },
   ],
   aboutme:
-    "I am a creative web developer who is always willing to push the envelope to improve the user experience. I love solving real world problems and working with vibrant teams.",
+    "Over the last 2 years, I've had the pleasure to sink my feet in the fascinating world of Ed - tech, building and teaching using agile and scrum methodologies. I am proficient in a variety of technologies, including",
   address: "Durban, South Africa",
   website: "",
+  tools: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "NodeJS",
+    "ExpresJS",
+    "React",
+    "Redux",
+    "REST",
+    "Material UI",
+    "Tailwind",
+    "Git and Github",
+    "Figma",
+    "Photshop",
+  ],
   education: [
     {
       UniversityName: "Umuzi Academy",
@@ -76,34 +91,40 @@ let resumeData = {
   ],
   portfolio: [
     {
-      name: "project1",
-      description: "mobileapp",
-      imgurl: "images/portfolio/coffee.jpg",
+      name: "Tilde",
+      description: "Learner management platform",
+      imgurl: "images/portfolio/tilde.png",
+      projectUrl: "https://tilde-front-dot-umuzi-prod.nw.r.appspot.com/",
     },
     {
-      name: "project2",
-      description: "mobileapp",
-      imgurl: "images/portfolio/console.jpg",
+      name: "Aglet",
+      description: "Aglet assessment",
+      imgurl: "images/portfolio/aglet.png",
+      projectUrl: "https://sbonelo01.github.io/aglet",
     },
     {
-      name: "project3",
-      description: "mobileapp",
-      imgurl: "images/portfolio/origami.jpg",
+      name: "Music player",
+      description: "A minimalistic music player",
+      imgurl: "images/portfolio/music.png",
+      projectUrl: "https://sbonelo01.github.io/MusicPlayer/",
     },
     {
-      name: "project4",
-      description: "mobileapp",
-      imgurl: "images/portfolio/retrocam.jpg",
+      name: "Hangman",
+      description: "A hangman web game",
+      imgurl: "images/portfolio/hangman.jpg",
+      projectUrl: "https://sbonelo01.github.io/hangMan",
     },
   ],
   testimonials: [
     {
-      description: "This is a sample testimonial",
-      name: "Some technical guy",
+      description:
+        "He is bright, incredibly curious, and always eager to learn new things and take on new challenges.",
+      name: "Anthony Selley - Tech-Ed Team Leader at Umuzi.org",
     },
     {
-      description: "This is a sample testimonial",
-      name: "Some technical guy",
+      description:
+        "An exceptionally bright minded individual, hard worker and will have a bright future in whatever he puts his mind to.",
+      name: "Kyle Posthumus - Audi Center Durban",
     },
   ],
 };

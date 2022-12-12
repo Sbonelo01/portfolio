@@ -98,7 +98,7 @@ let resumeData = {
     },
     {
       name: "Peep",
-      description: "Parking applicatio",
+      description: "Parking application",
       imgurl: "images/portfolio/peep.jpg",
       projectUrl: "https://sbonelo01.github.io/Peep/",
     },

@@ -97,10 +97,10 @@ let resumeData = {
       projectUrl: "https://tilde-front-dot-umuzi-prod.nw.r.appspot.com/",
     },
     {
-      name: "Aglet",
-      description: "Aglet assessment",
-      imgurl: "images/portfolio/aglet.png",
-      projectUrl: "https://sbonelo01.github.io/aglet",
+      name: "Peep",
+      description: "Parking applicatio",
+      imgurl: "images/portfolio/peep.jpg",
+      projectUrl: "https://sbonelo01.github.io/Peep/",
     },
     {
       name: "Music player",

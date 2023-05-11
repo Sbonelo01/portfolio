@@ -24,7 +24,7 @@
         $recipient = "sbonelomkhize15@gmail.com";
 
         // Set the email subject.
-        $subject = "New contact from profil";
+        $subject = "New contact from personal website";
 
         // Build the email content.
         $email_content = "Name: $name\n";

@@ -447,7 +447,9 @@
           <div class="col-md-12 text-center">
             <div class="section-title">
               <h2><span>Contact</span> Me</h2>
-              <!-- <p id="contact-form-status">Thanks for reaching out</p> -->
+              <p id="contact-form-status">
+                Thank you for reaching out, speak soon!
+              </p>
             </div>
           </div>
         </div>
@@ -589,16 +591,14 @@
   </body>
   <script>
     const form = document.getElementById("ajax-contact");
-    // var status = document.getElementById("contact-form-status");
-    // console.log(status.innerHTML);
+    let status = document.getElementById("contact-form-status");
+    status.style.display = "none";
 
     async function handleSubmit(event) {
       event.preventDefault();
-      // let status = document.getElementById("contact-form-status");
-      // let status = document.getElementById("contact-form-status");
-      // status.style.backgroundColor = "red";
-      // console.log(status.style);
+
       let data = new FormData(event.target);
+
       fetch(event.target.action, {
         method: form.method,
         body: data,
@@ -608,10 +608,11 @@
       })
         .then((response) => {
           if (response.ok) {
-            //status.innerHTML = "Thanks for your submission!";
-            // status.style.display = "block";
-            // console.log(status);
-            alert("thanks for reaching out");
+            status.style.display = "block";
+            setTimeout(() => {
+              status.style.display = "none";
+            }, 5000);
+
             form.reset();
           } else {
             response.json().then((data) => {
@@ -620,16 +621,12 @@
                   .map((error) => error["message"])
                   .join(", ");
               } else {
-                // status.innerHTML =
-                //   "Oops! There was a problem submitting your form";
-                // status.style.display = "hidden";
                 alert("there was an error submitting your form");
               }
             });
           }
         })
         .catch((error) => {
-          // status.innerHTML = "Oops! There was a problem submitting your form";
           alert("there was an error submitting your form");
         });
     }

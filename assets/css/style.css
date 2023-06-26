@@ -780,8 +780,73 @@ section {
   max-width: 700px;
 }
 
+/* toast */
 #contact-form-status {
-  color: #50b948;
+  /* color: #50b948; */
+
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #50b948;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#contact-form-status.show {
+  visibility: visible;
+  -webkit-animation: fadein 0s, fadeout 0.5s 2.5s;
+  animation: fadein 0s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 .form-control {

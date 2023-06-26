@@ -811,7 +811,7 @@ section {
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    bottom: 50px;
     opacity: 1;
   }
 }
@@ -822,14 +822,14 @@ section {
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    bottom: 50px;
     opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeout {
   from {
-    bottom: 30px;
+    bottom: 50px;
     opacity: 1;
   }
   to {
@@ -840,7 +840,7 @@ section {
 
 @keyframes fadeout {
   from {
-    bottom: 30px;
+    bottom: 50px;
     opacity: 1;
   }
   to {

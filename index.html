@@ -603,7 +603,7 @@
         const contactFormStatus = document.getElementById(
           "contact-form-status"
         );
-        constactFormStatus.className = "show";
+        contactFormStatus.className = "show";
         setTimeout(() => {
           contactFormStatus.className = contactFormStatus.className.replace(
             "show",
@@ -620,6 +620,8 @@
         },
       })
         .then((response) => {
+          console.log(response);
+
           if (response.ok) {
             showToast();
 
@@ -637,7 +639,8 @@
           }
         })
         .catch((error) => {
-          alert("there was an error submitting your form");
+          throw error;
+          alert("there was an error submitting your form brother");
         });
     }
     form.addEventListener("submit", handleSubmit);
